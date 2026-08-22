@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B1325"/>
+    </radialGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="avatarGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Fundo Circular e Grid Tecnológico -->
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="200" r="190" stroke="url(#shieldGrad)" stroke-width="3" stroke-dasharray="8 6" opacity="0.6"/>
+  <circle cx="200" cy="200" r="170" stroke="#0284C7" stroke-width="1" opacity="0.2"/>
+
+  <!-- Elementos Gráficos de Engenharia e Segurança -->
+  <path d="M70 200 H330 M200 70 V330" stroke="#38BDF8" stroke-width="0.5" opacity="0.15"/>
+  
+  <!-- Silhueta Profissional Elegante -->
+  <g transform="translate(0, 10)">
+    <!-- Cabeça e Ombros -->
+    <circle cx="200" cy="145" r="55" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+    <path d="M120 310 C120 235 155 215 200 215 C245 215 280 235 280 310 Z" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+    
+    <!-- Monograma Executivo RG -->
+    <text x="200" y="157" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="34" font-weight="800" fill="#38BDF8" text-anchor="middle" letter-spacing="2">RG</text>
+    
+    <!-- Gravata / Linha Arquitetural -->
+    <path d="M195 215 L200 280 L205 215 Z" fill="#0284C7" opacity="0.8"/>
+  </g>
+
+  <!-- Selo de Status Profissional / Cibersegurança -->
+  <g transform="translate(285, 275)" filter="url(#glowEffect)">
+    <rect width="42" height="42" rx="12" fill="#0B1325" stroke="#10B981" stroke-width="2"/>
+    <path d="M21 11 L31 16 V23 C31 28.5 26.5 32.5 21 34 C15.5 32.5 11 28.5 11 23 V16 L21 11 Z" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="2"/>
+    <path d="M17 22.5 L19.5 25 L25 19.5" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

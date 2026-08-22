@@ -1,0 +1,93 @@
+/* ==========================================================================
+   ROMULO GALVAO — PRINT STYLESHEET (Executive Résumé View)
+   ========================================================================== */
+
+@media print {
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Hide interactive / non-printable elements */
+  .header,
+  .mobile-toggle,
+  .mobile-drawer,
+  .hero-actions,
+  .stack-tabs-nav,
+  .service-action,
+  .contact-form-card,
+  .back-to-top,
+  .toast,
+  .modal-overlay,
+  .theme-toggle,
+  .status-badge-dot {
+    display: none !important;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .section {
+    padding: 1.5rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .hero {
+    padding-top: 1rem !important;
+    border-bottom: 2px solid #333 !important;
+  }
+
+  .hero-name {
+    font-size: 24pt !important;
+    color: #000 !important;
+  }
+
+  .hero-headline {
+    font-size: 14pt !important;
+    color: #333 !important;
+  }
+
+  .specialties-grid,
+  .services-grid,
+  .projects-grid,
+  .academic-grid {
+    display: block !important;
+  }
+
+  .specialty-card,
+  .service-card,
+  .case-card,
+  .academic-card,
+  .timeline-card {
+    border: 1px solid #ccc !important;
+    margin-bottom: 1rem !important;
+    page-break-inside: avoid;
+    padding: 1rem !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+
+  .footer {
+    border-top: 1px solid #ccc !important;
+    padding-top: 1rem !important;
+    font-size: 9pt !important;
+  }
+}
