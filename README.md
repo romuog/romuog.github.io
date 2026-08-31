@@ -1,76 +1,31 @@
-# Site Profissional — Romulo Galvao
+# Romulo Galvao — Site Profissional
 
-Site institucional e portfólio profissional de **Romulo Galvao** (Rômulo Galvão de Araújo Souza) — Especialista em Desenvolvimento Web (PHP / Laravel), Engenharia de Servidores Linux, Redes Corporativas MikroTik e Cibersegurança.
+Site profissional de **Romulo Galvao** (Rômulo Galvão de Araújo Souza).
+Especialista com mais de 20 anos de experiência (desde 2005) em **Gestão de TIC, Desenvolvimento Web (PHP / Laravel), Engenharia de Servidores Linux, Redes de Telecomunicações/ISPs e Cibersegurança**.
 
----
-
-## 🚀 Visão Geral e Recursos
-
-- **Design System & UX/UI Corporativo**: Interface sóbria, elegante e moderna com tema escuro (Dark Mode) padrão e alternância para tema claro (Light Mode) com persistência em `localStorage`.
-- **Performance de Alto Nível**: Vanilla JavaScript e CSS3 puro, sem dependências pesadas externas, garantindo pontuação máxima no Google Core Web Vitals e PageSpeed Insights.
-- **Copywriting Técnico B2B**: Seções com comunicação madura no formato *Problema → Solução → Benefício*, ideal para tomada de decisão por gestores, diretores e recrutadores.
-- **Acessibilidade & Semântica**: Estrutura em conformidade com as diretrizes WCAG 2.1 AA (foco visível, navegação por teclado, contraste verificado e leitor de tela).
-- **SEO Completo**: Metadados Open Graph para pré-visualizações ricas no WhatsApp e LinkedIn, Twitter Cards, `sitemap.xml`, `robots.txt` e dados estruturados Schema.org (`Person` e `ProfessionalService`).
-- **Resumo Executivo para Impressão**: Suporte a folha de impressão (`print.css`), formatando automaticamente o site em um currículo executivo limpo ao pressionar `Ctrl + P` ou clicar em "Imprimir Perfil".
+- 🌐 **Site ao Vivo**: [https://romuog.github.io/](https://romuog.github.io/)
+- 📱 **WhatsApp**: [+55 (84) 99992-9103](https://wa.me/5584999929103)
+- ✉️ **E-mail**: [romulo.galvao@rginf.tec.br](mailto:romulo.galvao@rginf.tec.br)
+- 💼 **LinkedIn**: [linkedin.com/in/romulogalvaoasouza](https://www.linkedin.com/in/romulogalvaoasouza/)
+- 🐙 **GitHub**: [github.com/romuog](https://github.com/romuog)
+- 📸 **Instagram**: [@romulo_tic](https://instagram.com/romulo_tic)
 
 ---
 
-## 📁 Estrutura de Arquivos
+## 🎯 Pilares e Especialidades
 
-```
-site_romulo_galvao/
-├── index.html                   # Documento HTML5 semântico e estruturado
-├── robots.txt                   # Diretivas para motores de busca
-├── sitemap.xml                  # Mapa XML do site
-├── README.md                    # Documentação do projeto
-└── assets/
-    ├── css/
-    │   ├── style.css            # Folha de estilos master (Design System, Dark/Light, Layout)
-    │   └── print.css            # Estilo otimizado para impressão / PDF
-    ├── js/
-    │   └── main.js              # Controlador JavaScript (Temas, Menus, Filtros, Contato, WhatsApp)
-    └── images/
-        ├── favicon.svg          # Favicon vetorial com monograma RG
-        ├── placeholder-avatar.svg # Avatar vetorial profissional
-        └── og-image.svg         # Banner para compartilhamento social
-```
+1. **Desenvolvimento Web & Laravel**: Sistemas corporativos sob medida, APIs RESTful, modelagem de bancos de dados relacionais e arquitetura limpa MVC.
+2. **Engenharia & Sustentação de Servidores Linux**: Hardening, Nginx/Apache, Docker, servidores de arquivos, webmail corporativo e planos de contingência (*Disaster Recovery*).
+3. **Engenharia de Redes & Telecom (MikroTik / ISP / VPNs)**: Vivência crítica no setor de provedores de internet (ISPs), roteamento avançado, balanceamento de links, QoS e túneis seguros com OpenVPN e WireGuard.
+4. **Cibersegurança & Avaliação de Riscos**: Análise de vulnerabilidades, blindagem perimetral, políticas de conformidade e adequação à LGPD.
+5. **Gestão de TIC & Governança**: Planejamento orçamentário de tecnologia, gestão estratégica de fornecedores, estruturação de suporte técnico (N1/N2) e docência tecnológica federal no IFRN (2023–2025).
 
 ---
 
-## 🛠️ Instruções de Personalização
+## 💻 Tecnologias Empregadas no Site
 
-### 1. Inserir sua Foto Profissional
-Quando desejar utilizar uma foto sua:
-1. Adicione sua fotografia na pasta `assets/images/` (ex: `foto-romulo.jpg` ou `foto-romulo.png`).
-2. No arquivo `index.html`, localize a tag `<img src="assets/images/placeholder-avatar.svg"...>` e altere o atributo `src` para `assets/images/foto-romulo.jpg`.
-
-### 2. Configurar o Número do WhatsApp Direto
-No arquivo `assets/js/main.js`, localize a linha:
-```javascript
-const phone = '5584999999999'; // Substitua pelo seu número com DDD (ex: 5584988887777)
-```
-Insira o seu número no formato internacional (`55` + `DDD` + `NÚMERO`).
-
-### 3. Configurar o Domínio / E-mail de Recebimento
-- No `index.html`, atualize as URLs canônicas caso venha a utilizar um domínio personalizado.
-- No `assets/js/main.js`, o e-mail padrão configurado é `contato@romulogalvao.com.br`.
-
----
-
-## 🌐 Como Publicar / Hospedar
-
-### Opção A: GitHub Pages (Gratuito e Rápido)
-1. Crie um repositório no seu GitHub (ex: `romuog/romuog.github.io` ou `romuog/site-profissional`).
-2. Faça o push dos arquivos deste diretório para a branch `main`.
-3. Em **Settings > Pages**, selecione a branch `main` e a pasta `/ (root)`.
-
-### Opção B: Servidor Próprio Linux (Nginx / Apache)
-Como você domina Linux e servidores:
-1. Aponte o VirtualHost do Nginx para a pasta `/var/www/site_romulo_galvao`.
-2. Habilite compactação Gzip e cache de cabeçalhos para arquivos estáticos (`.svg`, `.css`, `.js`).
-3. Emita o certificado SSL gratuito via Certbot: `sudo certbot --nginx -d seudominio.com.br`.
-
----
-
-## 📄 Licença e Direitos
-Copyright © 2026 **Romulo Galvao**. Todos os direitos reservados.
+- HTML5 Semântico com Schema.org JSON-LD (SEO avançado)
+- CSS3 Moderno (Custom Properties, Flexbox, Grid, Dark/Light Mode nativo com persistência)
+- JavaScript Vanilla modular de alta performance (sem dependências externas)
+- Layout Mobile-First com suporte a *safe-area insets* para smartphones
+- Publicação automatizada via **GitHub Pages**
