@@ -1,6 +1,6 @@
 # Romulo Galvao — Site Profissional
 
-Site profissional de **Romulo Galvao** (Rômulo Galvão de Araújo Souza).
+Site profissional de **Romulo Galvao** (Rômulo Galvão).
 Especialista com mais de 20 anos de experiência (desde 2005) em **Gestão de TIC, Desenvolvimento Web (PHP / Laravel), Engenharia de Servidores Linux, Redes de Telecomunicações/ISPs e Cibersegurança**.
 
 - 🌐 **Site ao Vivo**: [https://romuog.github.io/](https://romuog.github.io/)
